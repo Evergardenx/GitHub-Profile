@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  @apply text-white;
+}
+
+header {
+  @apply bg-cover h-60 pt-10;
+}
+
+.searchGrp {
+  @apply w-10/12 md:w-2/3 lg:w-4/12 flex flex-row items-center bg-mainBg  p-2 mx-auto  rounded-lg gap-2;
+}
+
+input {
+  @apply w-full bg-transparent focus:outline-0 focus:border-0;
+}
+
+main {
+  @apply px-5 lg:px-20 pb-10 bg-mainBg min-h-screen relative;
+}
+
+.profileDetails {
+  @apply absolute -top-10 flex flex-row md:items-end gap-5 md:gap-10;
+}
+
+.profileImg {
+  @apply w-20 md:w-24 h-20 md:h-24 rounded-xl border-8 border-b-0 border-mainBg;
+}
+
+.detailsGrp {
+  @apply flex flex-col md:flex-row items-start lg:items-end gap-5 mt-20 md:mt-0 text-sm md:text-base;
+}
+
+.detail {
+  @apply py-2 px-5 rounded-lg flex flex-row bg-detailBg;
+}
+
+.label {
+  @apply pr-3 border-r border-white capitalize text-textColor;
+}
+.result {
+  @apply pl-3;
+}
+
+.repositoryGrp {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-8 mt-8;
+}
+
+.repository {
+  @apply flex flex-col justify-between gap-3 rounded-lg p-3 bg-gradient-to-r from-detailBg to-repoColor cursor-pointer hover:scale-105 transition ease-in-out duration-200;
+}
+
+.repoName {
+  @apply font-bold;
+}
+
+.note {
+  @apply text-sm;
+}
+
+.iconGrp {
+  @apply flex flex-row gap-5 items-center text-sm;
+}
+
+.icon {
+  @apply flex flex-row gap-1 items-center;
+}
